@@ -15,9 +15,9 @@ request({url:url,json:true},(error,{body})=>
     }
     else
     {
-        callback(undefined,body.current.weather_descriptions[0]+',it is currently '+body.current.temperature+' but it feels like '+body.current.feelslike+' outside')
+    callback(undefined,body.current.weather_descriptions[0]+',it is currently '+body.current.temperature+' but it feels like '+body.current.feelslike+' outside. The humidity is '+body.current.humidity +" %")
     }
 })
 }
 
-module.exports = foreCAst
+module. exports = foreCAst
